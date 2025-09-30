@@ -18,6 +18,28 @@
    ```
    Você deverá ver a versão instalada do Terraform.
 
+## Teste de criação de bucket com Terraform
+
+Para testar a criação de um bucket conforme descrito no arquivo `main.tf`, siga os passos abaixo:
+
+1. Certifique-se de que o arquivo `main.tf` está configurado corretamente com as credenciais e informações do provedor.
+2. No terminal, navegue até a pasta onde está o arquivo `main.tf`.
+3. Execute o comando para inicializar o Terraform:
+   ```
+   terraform init
+   ```
+4. Em seguida, execute o comando para visualizar o que será criado:
+   ```
+   terraform plan
+   ```
+5. Para criar o bucket, execute:
+   ```
+   terraform apply
+   ```
+   Confirme a execução quando solicitado.
+
+6. Após a criação, verifique no console do provedor (ex: AWS S3) se o bucket foi criado com sucesso.
+
 ## Referências
 
 - [Documentação oficial do Terraform](https://developer.hashicorp.com/terraform/docs)
