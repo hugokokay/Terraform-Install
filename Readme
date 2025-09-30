@@ -1,7 +1,24 @@
 # Instalação do Terraform
 
-Entrar no site terraform.io
-Baixar o arquivo win64
-Descompactar em uma pasta
-Adicionar o path no windows
+## Passos para instalar o Terraform no Windows
+
+1. Acesse o site oficial: [terraform.io/downloads](https://www.terraform.io/downloads.html)
+2. Baixe o arquivo correspondente ao Windows (64-bit).
+3. Extraia o arquivo ZIP em uma pasta de sua preferência, por exemplo: `C:\terraform`.
+4. Adicione o caminho da pasta extraída ao **Path** do sistema:
+   - Abra o menu Iniciar e pesquise por "Variáveis de Ambiente".
+   - Clique em "Editar variáveis de ambiente do sistema".
+   - Na janela que abrir, clique em "Variáveis de Ambiente".
+   - Em "Variáveis do sistema", selecione a variável `Path` e clique em "Editar".
+   - Clique em "Novo" e adicione o caminho da pasta onde o Terraform foi extraído (ex: `C:\terraform`).
+   - Clique em "OK" para salvar.
+5. Para verificar se a instalação foi bem-sucedida, abra o Prompt de Comando e digite:
+   ```
+   terraform -version
+   ```
+   Você deverá ver a versão instalada do Terraform.
+
+## Referências
+
+- [Documentação oficial do Terraform](https://developer.hashicorp.com/terraform/docs)
 
